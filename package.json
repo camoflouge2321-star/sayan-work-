@@ -1,0 +1,20 @@
+{
+  "name": "sayan-creative-portfolio",
+  "version": "1.0.0",
+  "description": "Premium creative portfolio website showcasing photography and visual arts.",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx browser-sync start --server --files \"*.html, *.css, *.js\""
+  },
+  "keywords": [
+    "portfolio",
+    "photography",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "Rahul",
+  "license": "ISC",
+  "dependencies": {}
+}

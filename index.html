@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sayan — Creative Portfolio | Photography & Visual Arts</title>
+  <meta name="description"
+    content="Sayan's creative portfolio — Showcasing extraordinary photography, visual storytelling, and artistic excellence." />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+
+<body>
+
+  <!-- ═══════════════ CUSTOM CURSOR ═══════════════ -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-outline" id="cursorOutline"></div>
+
+  <!-- ═══════════════ CORNER LIGHTS ═══════════════ -->
+  <div class="corner-light top-left"></div>
+  <div class="corner-light top-right"></div>
+  <div class="corner-light bottom-left"></div>
+  <div class="corner-light bottom-right"></div>
+
+  <!-- ═══════════════ NAVIGATION ═══════════════ -->
+  <nav class="navbar" id="navbar">
+    <a href="#intro" class="nav-logo">Sayan<span>.</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#intro" class="active" data-section="intro">Home</a></li>
+      <li><a href="#portfolio" data-section="portfolio">Portfolio</a></li>
+      <li><a href="#reviews" data-section="reviews">Reviews</a></li>
+      <li><a href="#contact" class="nav-cta">Contact Me</a></li>
+    </ul>
+    <div class="nav-hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <!-- ═══════════════ EDGE POP-UPS ═══════════════ -->
+  <div class="edge-popup edge-popup-left" id="edgePopupLeft">
+    <button class="edge-popup-close" id="closeLeft">✕</button>
+    <span class="popup-icon">🎨</span>
+    <h3>Welcome!</h3>
+    <p>Explore my creative world of photography and visual storytelling.</p>
+  </div>
+  <div class="edge-popup edge-popup-right" id="edgePopupRight">
+    <button class="edge-popup-close" id="closeRight">✕</button>
+    <span class="popup-icon">📸</span>
+    <h3>New Work</h3>
+    <p>Check out my latest collection — fresh shots just added!</p>
+  </div>
+
+  <!-- ═══════════════ SECTION 1: INTRODUCTION ═══════════════ -->
+  <section class="section" id="intro" data-light="blue">
+    <div class="section-light active"></div>
+    <div class="section-content">
+      <div class="hero-wrapper">
+        <div class="hero-badge reveal">
+          <span class="dot"></span>
+          Available for Bookings
+        </div>
+        <h1 class="hero-title reveal delay-1">
+          Capturing<br />
+          <span class="highlight">Moments</span> That<br />
+          Last Forever
+        </h1>
+        <p class="hero-subtitle reveal delay-2">
+          Professional photographer &amp; visual artist crafting timeless stories through the lens. Every frame is a
+          masterpiece waiting to be discovered.
+        </p>
+        <div class="hero-buttons reveal delay-3">
+          <a href="#portfolio" class="btn btn-primary" id="btnViewWork">
+            ✦ View My Work
+          </a>
+          <a href="#contact" class="btn btn-secondary" id="btnHireMe">
+            → Let's Collaborate
+          </a>
+        </div>
+        <div class="hero-stats reveal delay-4">
+          <div class="stat">
+            <div class="stat-number" data-count="150">0</div>
+            <div class="stat-label">Projects Done</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number" data-count="80">0</div>
+            <div class="stat-label">Happy Clients</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number" data-count="5">0</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="mouse"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ═══════════════ SECTION 2: PORTFOLIO ═══════════════ -->
+  <section class="section" id="portfolio" data-light="teal">
+    <div class="section-light"></div>
+    <div class="section-content">
+      <div class="section-header">
+        <span class="section-tag reveal">Selected Works</span>
+        <h2 class="section-title reveal delay-1">Creative Portfolio</h2>
+        <p class="section-subtitle reveal delay-2">A curated collection of my finest photography projects across various
+          genres and styles.</p>
+      </div>
+
+      <div class="portfolio-filter reveal delay-3">
+        <button class="filter-btn active" data-filter="all">All Works</button>
+        <button class="filter-btn" data-filter="landscape">Landscape</button>
+        <button class="filter-btn" data-filter="portrait">Portrait</button>
+        <button class="filter-btn" data-filter="architecture">Architecture</button>
+        <button class="filter-btn" data-filter="street">Street</button>
+      </div>
+
+      <div class="portfolio-grid">
+        <div class="portfolio-card reveal-scale delay-1" data-category="landscape">
+          <img src="./assets/portfolio-1.png" alt="Mountain landscape at golden hour" loading="lazy" />
+          <div class="portfolio-overlay">
+            <span class="view-btn">↗</span>
+            <h3>Golden Horizons</h3>
+            <p>Landscape Photography</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal-scale delay-2" data-category="portrait">
+          <img src="./assets/portfolio-2.png" alt="Studio portrait with dramatic lighting" loading="lazy" />
+          <div class="portfolio-overlay">
+            <span class="view-btn">↗</span>
+            <h3>Shadows & Light</h3>
+            <p>Portrait Photography</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal-scale delay-3" data-category="architecture">
+          <img src="./assets/portfolio-3.png" alt="Modern architecture at twilight" loading="lazy" />
+          <div class="portfolio-overlay">
+            <span class="view-btn">↗</span>
+            <h3>Urban Geometry</h3>
+            <p>Architectural Photography</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal-scale delay-4" data-category="street">
+          <img src="./assets/portfolio-4.png" alt="Neon-lit city street at night" loading="lazy" />
+          <div class="portfolio-overlay">
+            <span class="view-btn">↗</span>
+            <h3>Neon Nights</h3>
+            <p>Street Photography</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal-scale delay-5" data-category="product">
+          <img src="./assets/portfolio-5.png" alt="Luxury product on dark marble" loading="lazy" />
+          <div class="portfolio-overlay">
+            <span class="view-btn">↗</span>
+            <h3>Luxury Detail</h3>
+            <p>Product Photography</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card reveal-scale delay-6" data-category="landscape">
+          <img src="./assets/portfolio-6.png" alt="Ocean seascape at sunset" loading="lazy" />
+          <div class="portfolio-overlay">
+            <span class="view-btn">↗</span>
+            <h3>Eternal Waves</h3>
+            <p>Landscape Photography</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ═══════════════ SECTION 3: CLIENT REVIEWS ═══════════════ -->
+  <section class="section" id="reviews" data-light="purple">
+    <div class="section-light"></div>
+    <div class="section-content">
+      <div class="section-header">
+        <span class="section-tag reveal">Testimonials</span>
+        <h2 class="section-title reveal delay-1">What Clients Say</h2>
+        <p class="section-subtitle reveal delay-2">Real feedback from clients who trusted me with their vision.</p>
+      </div>
+
+      <div class="reviews-container reveal delay-3">
+        <div class="reviews-slider" id="reviewsSlider">
+          <!-- Original set -->
+          <div class="review-card">
+            <div class="review-stars">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="review-text">"Sayan's work exceeded every expectation. The photos captured the essence of our
+              brand perfectly. His eye for detail and lighting is truly exceptional."</p>
+            <div class="review-author">
+              <div class="review-avatar">AR</div>
+              <div class="review-author-info">
+                <h4>Arjun Reddy</h4>
+                <p>CEO, PixelCraft Studios</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="review-text">"Absolutely stunning wedding photography! Every moment was captured with such emotion
+              and artistry. We couldn't be happier with the results."</p>
+            <div class="review-author">
+              <div class="review-avatar">PS</div>
+              <div class="review-author-info">
+                <h4>Priya Sharma</h4>
+                <p>Wedding Client</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="review-text">"The product shots Sayan delivered boosted our sales by 40%. Clean, professional, and
+              absolutely premium quality. A true master of his craft."</p>
+            <div class="review-author">
+              <div class="review-avatar">MK</div>
+              <div class="review-author-info">
+                <h4>Meera Kapoor</h4>
+                <p>Founder, Luxe Brands</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="review-text">"Working with Sayan was a game-changer for our marketing. His creative vision
+              transformed our entire visual identity. Highly recommended!"</p>
+            <div class="review-author">
+              <div class="review-avatar">RG</div>
+              <div class="review-author-info">
+                <h4>Rahul Gupta</h4>
+                <p>Marketing Director, NovaTech</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="review-text">"Sayan brought our architectural vision to life through his lens. The quality and
+              precision in every shot is unmatched. Truly a perfectionist."</p>
+            <div class="review-author">
+              <div class="review-avatar">DM</div>
+              <div class="review-author-info">
+                <h4>Deepak Malhotra</h4>
+                <p>Lead Architect, DesignHub</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="review-stars">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="review-text">"From concept to delivery, everything was flawless. Sayan's attention to color
+              grading and post-processing is on another level entirely."</p>
+            <div class="review-author">
+              <div class="review-avatar">NK</div>
+              <div class="review-author-info">
+                <h4>Neha Krishna</h4>
+                <p>Creative Director, AdSphere</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="slider-dots reveal delay-4">
+        <button class="slider-dot active" data-index="0"></button>
+        <button class="slider-dot" data-index="1"></button>
+        <button class="slider-dot" data-index="2"></button>
+        <button class="slider-dot" data-index="3"></button>
+        <button class="slider-dot" data-index="4"></button>
+        <button class="slider-dot" data-index="5"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ CONTACT SECTION ═══════════════ -->
+  <section class="section" id="contact" style="min-height: auto; padding: 5rem 0;">
+    <div class="section-content" style="padding-top: 2rem;">
+      <div class="section-header">
+        <span class="section-tag reveal">Get In Touch</span>
+        <h2 class="section-title reveal delay-1">Let's Work Together</h2>
+        <p class="section-subtitle reveal delay-2">Have a project in mind? I'd love to hear about it.</p>
+      </div>
+      <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;" class="reveal delay-3">
+        <a href="mailto:hello@sayan.com" class="btn btn-primary" id="btnEmail">✉ Email Me</a>
+        <a href="tel:+919876543210" class="btn btn-secondary" id="btnCall">☎ Call Now</a>
+        <a href="#" class="btn btn-secondary" id="btnWhatsapp">💬 WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer class="footer">
+    <div class="footer-content">
+      <a href="#intro" class="nav-logo" style="font-size: 1.4rem;">Sayan<span>.</span></a>
+      <div class="footer-links">
+        <a href="#intro">Home</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram" id="socialInstagram">📷</a>
+        <a href="#" aria-label="Facebook" id="socialFacebook">📘</a>
+        <a href="#" aria-label="Twitter" id="socialTwitter">🐦</a>
+        <a href="#" aria-label="LinkedIn" id="socialLinkedin">💼</a>
+      </div>
+      <p class="footer-copy">
+        © 2026 Sayan Photography. All rights reserved.<br />
+        <span class="developer-credit">Designed & Developed by <strong>Rahul</strong></span>
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
